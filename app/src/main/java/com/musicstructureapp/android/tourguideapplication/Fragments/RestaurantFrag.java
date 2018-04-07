@@ -32,7 +32,6 @@ public class RestaurantFrag extends Fragment {
         // Required empty public constructor
     }
 
-
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
@@ -50,7 +49,7 @@ public class RestaurantFrag extends Fragment {
         return view;
     }
 
-    public void getItemsList(){
+    public void getItemsList() {
         attraction = new ArrayList<>();
 
         attraction.add(new ItemModel(R.string.lorem, R.drawable.rest1, R.string.rest));
@@ -58,6 +57,4 @@ public class RestaurantFrag extends Fragment {
         attraction.add(new ItemModel(R.string.lorem, R.drawable.rest3, R.string.rest));
 
     }
-
-
 }

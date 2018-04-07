@@ -36,17 +36,17 @@ public class ItemsAdapter extends RecyclerView.Adapter<ItemViewHolder> {
     @Override
     public void onBindViewHolder(@NonNull final ItemViewHolder holder, int position) {
 
-    holder.myTextTitle.setText(itemModels.get(position).getMyTitle());
-    holder.myImage.setImageResource(itemModels.get(position).getMyImage());
-    holder.myTextDescription.setText(itemModels.get(position).getMyDescription());
+        holder.myTextTitle.setText(itemModels.get(position).getMyTitle());
+        holder.myImage.setImageResource(itemModels.get(position).getMyImage());
+        holder.myTextDescription.setText(itemModels.get(position).getMyDescription());
 
-        final boolean isExpanded = position==mExpandedPosition;
-        holder.myTextDescription.setVisibility(isExpanded?View.VISIBLE:View.GONE);
+        final boolean isExpanded = position == mExpandedPosition;
+        holder.myTextDescription.setVisibility(isExpanded ? View.VISIBLE : View.GONE);
         holder.itemView.setActivated(isExpanded);
         holder.itemView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                mExpandedPosition = isExpanded ? -1:holder.getAdapterPosition();
+                mExpandedPosition = isExpanded ? -1 : holder.getAdapterPosition();
                 TransitionManager.beginDelayedTransition(rv);
                 notifyDataSetChanged();
             }

@@ -28,7 +28,7 @@ public class MainActivity extends AppCompatActivity {
         setupViewPager(myViewpager);
     }
 
-    private void setupViewPager(ViewPager viewPager){
+    private void setupViewPager(ViewPager viewPager) {
         mFragmentsAdapter = new FragmentsAdapter(getSupportFragmentManager());
 
         mFragmentsAdapter.addFragment(new AttractionsFrag(), "Attractions");

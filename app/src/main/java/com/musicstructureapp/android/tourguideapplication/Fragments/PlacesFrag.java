@@ -26,11 +26,9 @@ public class PlacesFrag extends Fragment {
     ItemsAdapter mListAdapter;
     ArrayList<ItemModel> attraction;
 
-
     public PlacesFrag() {
         // Required empty public constructor
     }
-
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -49,7 +47,7 @@ public class PlacesFrag extends Fragment {
         return view;
     }
 
-    public void getItemsList(){
+    public void getItemsList() {
         attraction = new ArrayList<>();
 
         attraction.add(new ItemModel(R.string.lorem, R.drawable.plac1, R.string.place));

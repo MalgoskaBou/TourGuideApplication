@@ -1,7 +1,6 @@
 package com.musicstructureapp.android.tourguideapplication.Fragments;
 
 
-
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v7.widget.DefaultItemAnimator;
@@ -23,8 +22,8 @@ import java.util.ArrayList;
 public class AttractionsFrag extends Fragment {
 
     RecyclerView mRecyclerView;
-   ItemsAdapter mListAdapter;
-   ArrayList<ItemModel> attraction;
+    ItemsAdapter mListAdapter;
+    ArrayList<ItemModel> attraction;
 
 
     public AttractionsFrag() {
@@ -48,12 +47,12 @@ public class AttractionsFrag extends Fragment {
         return view;
     }
 
-    public void getItemsList(){
+    public void getItemsList() {
         attraction = new ArrayList<>();
 
-            attraction.add(new ItemModel(R.string.lorem, R.drawable.attr1, R.string.attr));
-            attraction.add(new ItemModel(R.string.lorem, R.drawable.attr2, R.string.attr));
-            attraction.add(new ItemModel(R.string.lorem, R.drawable.attr3, R.string.attr));
+        attraction.add(new ItemModel(R.string.lorem, R.drawable.attr1, R.string.attr));
+        attraction.add(new ItemModel(R.string.lorem, R.drawable.attr2, R.string.attr));
+        attraction.add(new ItemModel(R.string.lorem, R.drawable.attr3, R.string.attr));
 
     }
 }

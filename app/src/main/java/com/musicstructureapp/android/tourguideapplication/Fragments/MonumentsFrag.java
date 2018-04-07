@@ -49,7 +49,7 @@ public class MonumentsFrag extends Fragment {
         return view;
     }
 
-    public void getItemsList(){
+    public void getItemsList() {
         attraction = new ArrayList<>();
 
         attraction.add(new ItemModel(R.string.lorem, R.drawable.mon1, R.string.mon));
@@ -57,7 +57,6 @@ public class MonumentsFrag extends Fragment {
         attraction.add(new ItemModel(R.string.lorem, R.drawable.mon3, R.string.mon));
 
     }
-
 
 
 }
